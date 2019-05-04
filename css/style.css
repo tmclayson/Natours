@@ -177,10 +177,9 @@ visited state would by default turn a link purple
   - must be on the initial state
   - will apply to the hover and active states also
   */
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
-
 }
 
 /* moves the button up slightly when hovered */
@@ -192,21 +191,20 @@ visited state would by default turn a link purple
 }
 /* moves the button down slightly when clicked */
 .btn:active {
-  transform: translateY(-.1rem);
+  transform: translateY(-0.1rem);
   /* decrease the shadown to make the button look closer */
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn--white {
   background-color: #fff;
   color: #777;
-
 }
 /* creates a pseudo-element that is the last child of the selected element
    that you can style */
 .btn::after {
   /* must be specified */
-  content: "";
+  content: '';
   display: inline-block;
   /* since the pseudo element is a child, then here it will match the button */
   height: 100%;
@@ -218,7 +216,7 @@ visited state would by default turn a link purple
   top: 0;
   left: 0px;
   z-index: -1;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .btn--white::after {
@@ -235,7 +233,7 @@ visited state would by default turn a link purple
 
 .btn--animated {
   /* .75s delay */
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   /* applies the properties of the 0% before the animation starts */
   animation-fill-mode: backwards;
   /* animation-name: moveInBottom;
