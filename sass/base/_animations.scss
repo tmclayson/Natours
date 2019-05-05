@@ -1,0 +1,48 @@
+/* browsers are optimized to animate two properties, but with transform you can do a lot */
+@keyframes moveInLeft {
+  /* beginning (before start) */
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+  /* at the end */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  /* beginning (before start) */
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+  /* at the end */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  /* beginning (before start) */
+  0% {
+    opacity: 0;
+    /*  Y axis moves from top to bottom, so down is a positive value*/
+    transform: translateY(3rem);
+  }
+  /* at the end */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

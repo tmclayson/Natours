@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* by default box-sizing is not inherited, making it so, and giving it a value
+     in body is a better practice, as it is easier to override with plugins etc*/
+  box-sizing: inherit;
+}
+
+/* % of the user defined fontsize in the browser - by default 16, but if the user changes it, our design adapts */
+html {
+  // whilst this is also typography, it acts more as a base settings for the entire project,
+  // defining what 1rem is.
+  font-size: 62.5%;
+}
+
+body {
+  /* changes the box model so that the borders and padding are no
+  longer added to the toal width/height */
+  box-sizing: border-box;
+}
