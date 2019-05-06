@@ -20,7 +20,7 @@ visited state would by default turn a link purple
   */
     transition: all 0.2s;
     position: relative;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
   }
   /* creates a pseudo-element that is the last child of the selected element
    that you can style */
@@ -80,4 +80,27 @@ visited state would by default turn a link purple
   animation-duration: 1s;
   animation-timing-function: ease-out; */
   }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block; // so that we can use properties like width, margin etc
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary; // same as the text color so that we can set a padding between the text and the border
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  // &:active {
+  // }
 }
